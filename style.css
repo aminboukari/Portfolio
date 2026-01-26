@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+  
+
+header{
+    background-color: rgb(4, 32, 116);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding-left: 20px;
+    transition: 0.7s ease;
+}
+.navigation a:hover{
+    background-color: rgb(72, 72, 245);
+    border-radius: 15px;
+    padding: 10px;
+    transform: scale(1.1);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+   
+    
+    
+}
+.main h2{
+    color:white;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color:rgb(60, 66, 255);
+    font-size: 2em;
+    font-weight: 700;
+}
+.main p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.main-btn{
+
+    color: rgb(24, 22, 22);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    background-color: rgb(50, 127, 243);
+    transition: 0.7s ease;
+
+  
+
+}
+.main a:hover{
+    background-color: white;
+    transform: scale(1.1);    
+}
+
+.photo img{
+    width: 500px;
+    height: 500px;
+    border-radius: 200px;  
+}
+
+
+
+
+.content .title{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: blue;
+    font-weight:800 ;
+    margin-bottom: 30px;
+}
+
+.content .cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.7s ease;
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card img{
+    text-align: center;
+    padding: 30px;
+}
+
+.card h3{
+    color: black;
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.card .info{
+    text-align: center;
+}
+.content-project h2{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: blue;
+    font-weight:800 ;
+    margin-bottom: 30px;
+}

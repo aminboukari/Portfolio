@@ -1,71 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- META -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE -->
+    <title>Mohamed Amine Boukari | Web Integrator</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/pro.png" />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Mohamed Amine Boukari</title>
-  </head>
-  <body>
-    <header class="head">
-      <a class="logo" >My-Portf</a>
 
-      <nav class="navigation">
-        <a href="#Services">Services</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({
+          publicKey: "Public_Key",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!--  HEADER  -->
+    <header class="header">
+      <h1 class="logo">Mohamed Amine Boukari</h1>
+
+      <div class="listsIcon">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-xmark"></i>
+      </div>
+ 
+      <nav class="navlink">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <section class="main">
-      <div>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-content">
         <h2>
-          Hello, I'm Mohamed Amine Boukari <br /><span>Web developer</span>
+          Hi, I'm <span>Mohamed Amine Boukari</span>
         </h2>
-        <p>I create modern websites with a focus on <br />user experience.</p>
-        <a href="#Projects" class="main-btn">View my work</a>
+
+        <h3>Frontend Developer | Web Integrator</h3>
+
+        <p>
+          I create fast, modern and responsive websites that deliver real value
+          to users and businesses.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View My Works</a>
+          <a href="#contact" class="btn outline">Contact Me</a>
+        </div>
       </div>
-      <div class="photo">
-        <img src="images/profil.png" />
+
+      <div class="hero-image">
+        <img src="images/pro.png" alt=" Mohamed Amine Boukari profile picture" />
       </div>
     </section>
 
-    <section class="content" id="Services">
-      <h2 class="title">Services</h2>
+    <!--  SERVICES  -->
+    <section id="services" class="section">
+      <h2 class="section-title">Services</h2>
 
-      <div class="cards">
+      <div class="grid">
         <div class="card">
-          <img src="images/front.png" alt="logo front-end" class="icon" />
-          <div class="info">
-            <h3>Frontend</h3>
-            <p>Responsable de l’interface visible par l’utilisateur.</p>
-          </div>
+          <i class="fas fa-code"></i>
+          <h3>Web Integration</h3>
+          <p>Convert designs into pixel-perfect responsive websites.</p>
         </div>
 
         <div class="card">
-          <img src="images/back.png" alt="logo back-end" class="icon" />
-          <div class="info">
-            <h3>Backend</h3>
-            <p>
-              Gère la logique métier, les bases de données et le traitement des
-              données côté serveur.
-            </p>
-          </div>
+          <i class="fas fa-laptop-code"></i>
+          <h3>Frontend Dev</h3>
+          <p>Build dynamic UI using HTML, CSS and JavaScript.</p>
         </div>
-         <div class="card">
-          <img src="images/full.jpg" alt="logo full-stack" class="icon" />
-          <div class="info">
-            <h3>full-stack</h3>
-            <p>
-              Combine les compétences frontend et backend dans un même profil.
-            </p>
-          </div>
+
+        <div class="card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Responsive Design</h3>
+          <p>Perfect layout on mobile, tablet and desktop.</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-tools"></i>
+          <h3>Maintenance</h3>
+          <p>Fix bugs and keep your website updated.</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-tachometer-alt"></i>
+          <h3>Performance</h3>
+          <p>Optimize speed and improve loading time.</p>
+        </div>
+
+        <div class="card">
+          <i class="fas fa-search"></i>
+          <h3>SEO Basics</h3>
+          <p>Improve visibility on search engines.</p>
+        </div>
       </div>
     </section>
 
+    <!--  PROJECTS  -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="grid">
+        <div class="card">
+          <img src="images/agency.jpg" alt="Agency logo" />
+          <h3>Agency Car</h3>
+          <p>Car rental website with modern UI.</p>
+          <a href="https://aminboukari.github.io/car-agency/" target="_blank" class="btn outline">View My Project</a>
+        </div>
+
+        <div class="card">
+          <img src="images/Dental.jpg" alt="Dental clinic logo" />
+          <h3>Dental Clinic</h3>
+          <p>Professional medical website design.</p>
+          <a href="#" target="_blank" class="btn outline">View My Project</a>
+        </div>
+
+        <div class="card">
+          <img src="images/Urbain.jpg" alt="Portfolio preview" />
+          <h3>Urban Café</h3>
+          <p>A modern responsive café website.</p>
+          <a href="https://aminboukari.github.io/Urban-Caf-/" target="_blank" class="btn outline">View My Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+
+      <form id="form" class="contact-form">
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <small class="error" id="nameError"></small>
+
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <small class="error" id="emailError"></small>
+
+        <input type="text" id="subject" name="subject" placeholder="Subject" required />
+        <small class="error" id="subjectError"></small>
+
+        <textarea id="message" name="message" placeholder="Message" required></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit" class="btn primary" >
+          Send
+        </button>
+
+        <p id="success"></p>
+        <p id="failed"></p>
+      </form>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p><span>© 2026 Mohamed Amine Boukari </span>  
+         <a href="https://github.com/aminboukari/" target="_blank"><i class="fa-brands fa-github"></i></a> </p>
+    </footer>
+
+    <!-- MAIN JS -->
+    <script src="script.js"></script>
   </body>
 </html>

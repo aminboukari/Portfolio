@@ -79,7 +79,7 @@ EmailJS keys are public by design but restricted via domain and usage limits for
 Web Integrator / Frontend Developer
 
 * GitHub: https://github.com/aminboukari
-* Portfolio: https://aminboukari.github.io
+* Portfolio: https://aminboukari.github.io/Portfolio/
 
 ---
 
